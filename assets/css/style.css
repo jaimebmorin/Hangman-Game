@@ -1,0 +1,28 @@
+.letter {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+}
+
+.letter-button-color {
+    color: darkcyan;
+}
+
+#display {
+    margin-top: 78px;
+    height: 500px;
+    width: 220px;
+    margin-left: 60px;
+}
+
+#buttons {
+    padding-top: 60px;
+    position: relative;
+}
+
+#letterholder {
+  position: absolute;
+}
