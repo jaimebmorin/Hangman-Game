@@ -23,6 +23,10 @@
     position: relative;
 }
 
+#wordSelected {
+    padding-top: 60px;
+}
+
 #letterholder {
   position: absolute;
 }
