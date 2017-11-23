@@ -10,6 +10,9 @@
 .letter-button-color {
     color: darkcyan;
 }
+.word-button-color {
+    color: darkcyan;
+}
 
 #display {
     margin-top: 78px;

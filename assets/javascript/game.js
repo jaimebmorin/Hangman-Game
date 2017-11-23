@@ -25,33 +25,33 @@ console.log(wordChosen[0]);
 for (var i=0; i<letters.length; i++){
 	var letterBtn = $("<button>");
 	letterBtn.addClass("letter-button letter letter-button-color");
-	letterBtn.attr("data-letter", letters[i]);
+	letterBtn.attr("data-button", letters[i]);
 	letterBtn.text(letters[i]);
 	$("#buttons").append(letterBtn);
 }
 
 for (var i=0; i<wordChosen[0].length; i++){
 	var wordBtn=$("<div>");
-	wordBtn.addClass("letter-button letter letter-button-color");
-	wordBtn.attr("data-letter", wordChosen[i+1]);
+	wordBtn.addClass("word-button letter word-button-color");
+	wordBtn.attr("data-word", wordChosen[i+1]);
 	wordBtn.text(" ");
 	$("#wordSelected").append(wordBtn);
 }
 
 //for clicks - still can't figure it out - will use button presses for now
 
-//$(".letter-button").on("click", function() {
-//var guess = $("<div>");
-//fridgeMagnet.addClass("letter fridge-color");
-//fridgeMagnet.text($(this).attr("data-letter"));
-//console.log(guess);
+$(".letter-button").on("click", function() {
+var guess = $("<div>");
+//guess.addClass("letter fridge-color");
+guess.text($(this).attr("data-button"));
+console.log(guess.getData);
 //$("#display").append(fridgeMagnet);
-//})
+})
 
 //attempt with user imputing via keyboard
 
-//document.onkeyup = function(event) {
-//var userInput = String.fromCharCode(event.keyCode).toLowerCase();
+// document.onkeyup = function(event) {
+// var userInput = String.fromCharCode(event.keyCode).toLowerCase();
 //	for (var i=0; i<wordChosen[0].length; i++)
 //		var wordBtn=$("<div>");
 //		wordBtn.addClass("letter-button letter letter-button-color");
